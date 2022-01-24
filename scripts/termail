@@ -1,0 +1,11 @@
+#!/usr/bin/env python3.10
+
+import sys
+
+if sys.version_info < (3, 10):
+    print('[!!] python 3.10 or higher is required. You are currently running:\n%s' % sys.version, file=sys.stderr)
+    sys.exit(1)
+
+if __name__ == '__main__':
+    import termail
+    termail.run()
